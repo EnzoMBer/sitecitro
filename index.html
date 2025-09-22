@@ -210,32 +210,51 @@
     }
 
     @media (max-width: 900px) {
-      .armadilha img { width: 120px; }
-      .armadilha { max-width: 48%; }
-      .card-passos { width: 100%; }
-      .titulo-section h1 { font-size: 36px; }
-      .card-passos img { width: 90px; }
-    }
-
-    @media (max-width: 520px) {
-      .armadilha { max-width: 100%; }
-      .armadilha img { width: 110px; }
-      .hero-text h1 { font-size: 28px; }
-
+      .armadilha {
+        width: 100%;
+        max-width: none;
+      }
+      .armadilha img {
+        width: 120px;
+      }
+      .armadilhas {
+        gap: 20px;
+      }
       .card-passos {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 18px;
       }
-
       .card-passos img {
-        width: 110px;
+        width: 90px;
         margin-bottom: 12px;
       }
+      .card-passos .card-content {
+        width: 100%;
+      }
+      .card-passos p {
+        text-align: justify;
+      }
+      .titulo-section h1, h2 {
+        font-size: 36px;
+      }
+    }
 
-      .card-passos .card-content { width: 100%; }
-      .card-passos p { text-align: justify; }
+    @media (max-width: 520px) {
+      .armadilha img {
+        width: 110px;
+      }
+      .hero-text h1 {
+        font-size: 28px;
+      }
+      .titulo-section h1, h2 {
+        font-size: 28px;
+      }
+      .card-passos img {
+        width: 110px;
+      }
     }
 
   </style>
@@ -275,10 +294,10 @@
   <div id="conteudo" class="container mt-5">
 
     <p style="font-size: 24px">Objetos cortantes ou pontiagudos, quando descartados de forma incorreta,
-      transformam sacos de lixo em verdadeiras armadilhas[cite: 2]. Vidro quebrado, latas abertas,
+      transformam sacos de lixo em verdadeiras armadilhas. Vidro quebrado, latas abertas,
       agulhas e espetinhos de churrasco são os maiores causadores de acidentes graves entre
-      os coletores que trabalham diariamente para manter nossa cidade limpa[cite: 3]. Um simples descuido
-      pode resultar em cortes profundos e infecções, afastando esses profissionais de suas atividades[cite: 4].
+      os coletores que trabalham diariamente para manter nossa cidade limpa. Um simples descuido
+      pode resultar em cortes profundos e infecções, afastando esses profissionais de suas atividades.
     </p>
 
     <br><br>
@@ -290,9 +309,9 @@
         <div class="armadilha">
           <img src="vidro-quebrado.png" alt="Ícone de vidro quebrado">
           <p>
-            Pedaços de vidro quebrado, mesmo os pequenos, transformam os sacos de lixo em armadilhas[cite: 7].
+            Pedaços de vidro quebrado, mesmo os pequenos, transformam os sacos de lixo em armadilhas.
             Eles podem rasgar as embalagens e luvas de proteção, causando cortes profundos e acidentes
-            graves nos profissionais que mantêm nossa cidade limpa[cite: 8].
+            graves nos profissionais que mantêm nossa cidade limpa.
           </p>
         </div>
 
@@ -300,8 +319,8 @@
           <img src="seringa.png" alt="Ícone de seringa">
           <p>
             Agulhas, espetos e outros objetos pontiagudos, quando descartados incorretamente, são os
-            maiores causadores de acidentes entre os coletores[cite: 9, 10]. Um simples descuido no descarte pode
-            resultar em perfurações e infecções, afastando esses trabalhadores de suas atividades[cite: 11].
+            maiores causadores de acidentes entre os coletores. Um simples descuido no descarte pode
+            resultar em perfurações e infecções, afastando esses trabalhadores de suas atividades.
           </p>
         </div>
       </div>
@@ -321,7 +340,7 @@
         <div class="card-content">
           <h3>EMBALE VIDROS E LOUÇAS</h3>
           <p>
-            Quebrados ou inteiros, envolva bem os vidros em várias folhas de jornal, plástico bolha ou revista. Em seguida, coloque-os dentro de caixas de papelão ou garrafas PET grandes e feche bem[cite: 13, 14].
+            Quebrados ou inteiros, envolva bem os vidros em várias folhas de jornal, plástico bolha ou revista. Em seguida, coloque-os dentro de caixas de papelão ou garrafas PET grandes e feche bem.
           </p>
         </div>
       </div>
@@ -331,7 +350,7 @@
         <div class="card-content">
           <h3>USE GARRAFAS PET PARA PONTIAGUDOS</h3>
           <p>
-            Utilize uma garrafa PET vazia para descartar objetos finos e pontiagudos como agulhas, seringas, espetinhos de madeira ou metal, grampos e pregos. Coloque o material dentro da garrafa, feche a tampa e reforce com fita adesiva[cite: 16, 17].
+            Utilize uma garrafa PET vazia para descartar objetos finos e pontiagudos como agulhas, seringas, espetinhos de madeira ou metal, grampos e pregos. Coloque o material dentro da garrafa, feche a tampa e reforce com fita adesiva.
           </p>
         </div>
       </div>
@@ -341,7 +360,7 @@
         <div class="card-content">
           <h3>IDENTIFIQUE O RISCO</h3>
           <p>
-            Escreva de forma clara e visível na sacola de lixo ou em uma etiqueta o tipo de material que está sendo descartado. Use alertas como "CUIDADO: VIDRO" ou "MATERIAL CORTANTE" para avisar o coletor do perigo[cite: 18, 19].
+            Escreva de forma clara e visível na sacola de lixo ou em uma etiqueta o tipo de material que está sendo descartado. Use alertas como "CUIDADO: VIDRO" ou "MATERIAL CORTANTE" para avisar o coletor do perigo.
           </p>
         </div>
       </div>
@@ -351,7 +370,7 @@
         <div class="card-content">
           <h3>CUIDADO COM AS LATAS</h3>
           <p>
-            Antes de jogar fora latas de alimentos como milho, atum ou leite condensado, pressione suas tampas para dentro. Isso evita que as bordas cortantes fiquem expostas e possam causar ferimentos[cite: 20, 21].
+            Antes de jogar fora latas de alimentos como milho, atum ou leite condensado, pressione suas tampas para dentro. Isso evita que as bordas cortantes fiquem expostas e possam causar ferimentos.
           </p>
         </div>
       </div>
