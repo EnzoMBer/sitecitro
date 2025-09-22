@@ -26,7 +26,7 @@
       border: 1px solid #000;
       border-radius: 40px;
       padding: 15px 40px;
-      font-size: clamp(16px, 2vw, 24px);
+      font-size: 24px;
       font-weight: 700;
       text-transform: lowercase;
       font-family: 'Montserrat', sans-serif;
@@ -74,16 +74,14 @@
     .hero-text h1 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      font-size: clamp(28px, 8vw, 80px);
+      font-size: clamp(32px, 8vw, 80px);
       text-align: center;
       color: #fff;
       text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
       margin-bottom: 20px;
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
       text-align: center;
     }
 
@@ -118,7 +116,7 @@
     }
 
     .titulo-section h1 {
-      font-size: clamp(28px, 5vw, 48px);
+      font-size: 48px;
       font-weight: 700;
       margin: 0 0 24px;
     }
@@ -126,27 +124,28 @@
     .armadilhas {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 40px;
       flex-wrap: wrap;
       margin: 20px 10px 40px 10px;
     }
 
     .armadilha {
-      flex: 1 1 260px;
-      max-width: 400px;
+      width: 400px;
+      max-width: 44%;
+      min-width: 260px;
       text-align: center;
-      margin-bottom: 20px;
     }
 
     .armadilha img {
-      width: 100px;
+      width: 150px;
       height: auto;
       margin: 0 auto 20px;
     }
 
     .armadilha p {
-      font-size: clamp(12px, 1.5vw, 14px);
+      font-size: 14px;
       text-transform: uppercase;
+      text-align: justify;
       line-height: 1.4;
       margin: 0;
     }
@@ -166,17 +165,17 @@
       background-color: #c0c0c0;
       border-radius: 8px;
       padding: 24px;
-      flex: 1 1 260px;
-      max-width: 45%;
+      width: 45%;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       gap: 20px;
+      min-width: 260px;
       transition: transform .12s;
-      box-sizing: border-box;
     }
 
     .card-passos img {
-      width: 90px;
+      width: 110px;
       height: auto;
       flex-shrink: 0;
       display: block;
@@ -190,7 +189,7 @@
     }
 
     .card-passos h3 {
-      font-size: clamp(16px, 2vw, 18px);
+      font-size: 18px;
       font-weight: 700;
       margin: 0 0 10px;
       text-transform: uppercase;
@@ -199,7 +198,7 @@
     }
 
     .card-passos p {
-      font-size: clamp(12px, 1.2vw, 14px);
+      font-size: 12px;
       line-height: 1.4;
       text-align: justify;
       margin: 0;
@@ -210,11 +209,24 @@
       transform: translateY(-4px);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+      .armadilha img { width: 120px; }
+      .armadilha { max-width: 48%; }
+      .card-passos { width: 100%; }
+      .titulo-section h1 { font-size: 36px; }
+      .card-passos img { width: 90px; }
+    }
+
+    @media (max-width: 520px) {
+      .armadilha { max-width: 100%; }
+      .armadilha img { width: 110px; }
+      .hero-text h1 { font-size: 28px; }
+
       .card-passos {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 18px;
       }
 
       .card-passos img {
@@ -222,41 +234,8 @@
         margin-bottom: 12px;
       }
 
-      .card-passos .card-content {
-        width: 100%;
-      }
-
-      .armadilha img {
-        width: 80px;
-      }
-
-      .navbar-nav {
-        flex-direction: column !important;
-        align-items: flex-start;
-      }
-
-      .navbar-nav .nav-link {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-text h1 {
-        font-size: 24px;
-      }
-
-      .armadilha img {
-        width: 70px;
-      }
-
-      .cards-wrap {
-        gap: 15px;
-      }
-
-      .card-passos {
-        padding: 16px;
-      }
+      .card-passos .card-content { width: 100%; }
+      .card-passos p { text-align: justify; }
     }
 
   </style>
@@ -275,11 +254,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarToggleMenu">
-        <ul class="navbar-nav ms-auto flex-column flex-md-row">
-          <li class="nav-item"><a class="nav-link text-white px-2" href="3_passos/01.html">1º PASSO</a></li>
-          <li class="nav-item"><a class="nav-link text-white px-2" href="3_passos/02.html">2º PASSO</a></li>
-          <li class="nav-item"><a class="nav-link text-white px-2" href="3_passos/03.html">3º PASSO</a></li>
-          <li class="nav-item"><a class="nav-link text-white px-2" href="3_passos/04.html">4º PASSO</a></li>
+        <ul class="navbar-nav flex-column ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="3_passos/01.html">1º PASSO</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="3_passos/02.html">2º PASSO</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="3_passos/03.html">3º PASSO</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="3_passos/04.html">4º PASSO</a></li>
         </ul>
       </div>
     </div>
@@ -295,12 +274,14 @@
 
   <div id="conteudo" class="container mt-5">
 
-    <p style="font-size: clamp(16px, 2vw, 24px)">Objetos cortantes ou pontiagudos, quando descartados de forma incorreta,
-      transformam sacos de lixo em verdadeiras armadilhas. Vidro quebrado, latas abertas,
+    <p style="font-size: 24px">Objetos cortantes ou pontiagudos, quando descartados de forma incorreta,
+      transformam sacos de lixo em verdadeiras armadilhas[cite: 2]. Vidro quebrado, latas abertas,
       agulhas e espetinhos de churrasco são os maiores causadores de acidentes graves entre
-      os coletores que trabalham diariamente para manter nossa cidade limpa. Um simples descuido
-      pode resultar em cortes profundos e infecções, afastando esses profissionais de suas atividades.
+      os coletores que trabalham diariamente para manter nossa cidade limpa[cite: 3]. Um simples descuido
+      pode resultar em cortes profundos e infecções, afastando esses profissionais de suas atividades[cite: 4].
     </p>
+
+    <br><br>
 
     <div class="titulo-section">
       <h1>VERDADEIRAS ARMADILHAS INVISÍVEIS</h1>
@@ -309,9 +290,9 @@
         <div class="armadilha">
           <img src="vidro-quebrado.png" alt="Ícone de vidro quebrado">
           <p>
-            Pedaços de vidro quebrado, mesmo os pequenos, transformam os sacos de lixo em armadilhas.
+            Pedaços de vidro quebrado, mesmo os pequenos, transformam os sacos de lixo em armadilhas[cite: 7].
             Eles podem rasgar as embalagens e luvas de proteção, causando cortes profundos e acidentes
-            graves nos profissionais que mantêm nossa cidade limpa.
+            graves nos profissionais que mantêm nossa cidade limpa[cite: 8].
           </p>
         </div>
 
@@ -319,14 +300,19 @@
           <img src="seringa.png" alt="Ícone de seringa">
           <p>
             Agulhas, espetos e outros objetos pontiagudos, quando descartados incorretamente, são os
-            maiores causadores de acidentes entre os coletores. Um simples descuido no descarte pode
-            resultar em perfurações e infecções, afastando esses trabalhadores de suas atividades.
+            maiores causadores de acidentes entre os coletores[cite: 9, 10]. Um simples descuido no descarte pode
+            resultar em perfurações e infecções, afastando esses trabalhadores de suas atividades[cite: 11].
           </p>
         </div>
       </div>
     </div>
 
-    <h2 style="font-size: clamp(24px, 5vw, 48px); font-weight: bold;">DESCARTE CORRETAMENTE EM 4 PASSOS</h2>
+    <br>
+
+    <h2 style="font-size: 48px; text-align: center; font-weight: bold;">DESCARTE CORRETAMENTE EM</h2>
+    <h2 style="font-size: 48px; text-align: center; font-weight: bold;">4 PASSOS</h2>
+
+    <br><br>
 
     <div class="cards-wrap">
 
@@ -335,7 +321,7 @@
         <div class="card-content">
           <h3>EMBALE VIDROS E LOUÇAS</h3>
           <p>
-            Quebrados ou inteiros, envolva bem os vidros em várias folhas de jornal, plástico bolha ou revista. Em seguida, coloque-os dentro de caixas de papelão ou garrafas PET grandes e feche bem.
+            Quebrados ou inteiros, envolva bem os vidros em várias folhas de jornal, plástico bolha ou revista. Em seguida, coloque-os dentro de caixas de papelão ou garrafas PET grandes e feche bem[cite: 13, 14].
           </p>
         </div>
       </div>
@@ -345,7 +331,7 @@
         <div class="card-content">
           <h3>USE GARRAFAS PET PARA PONTIAGUDOS</h3>
           <p>
-            Utilize uma garrafa PET vazia para descartar objetos finos e pontiagudos como agulhas, seringas, espetinhos de madeira ou metal, grampos e pregos. Coloque o material dentro da garrafa, feche a tampa e reforce com fita adesiva.
+            Utilize uma garrafa PET vazia para descartar objetos finos e pontiagudos como agulhas, seringas, espetinhos de madeira ou metal, grampos e pregos. Coloque o material dentro da garrafa, feche a tampa e reforce com fita adesiva[cite: 16, 17].
           </p>
         </div>
       </div>
@@ -355,7 +341,7 @@
         <div class="card-content">
           <h3>IDENTIFIQUE O RISCO</h3>
           <p>
-            Escreva de forma clara e visível na sacola de lixo ou em uma etiqueta o tipo de material que está sendo descartado. Use alertas como "CUIDADO: VIDRO" ou "MATERIAL CORTANTE" para avisar o coletor do perigo.
+            Escreva de forma clara e visível na sacola de lixo ou em uma etiqueta o tipo de material que está sendo descartado. Use alertas como "CUIDADO: VIDRO" ou "MATERIAL CORTANTE" para avisar o coletor do perigo[cite: 18, 19].
           </p>
         </div>
       </div>
@@ -365,7 +351,7 @@
         <div class="card-content">
           <h3>CUIDADO COM AS LATAS</h3>
           <p>
-            Antes de jogar fora latas de alimentos como milho, atum ou leite condensado, pressione suas tampas para dentro. Isso evita que as bordas cortantes fiquem expostas e possam causar ferimentos.
+            Antes de jogar fora latas de alimentos como milho, atum ou leite condensado, pressione suas tampas para dentro. Isso evita que as bordas cortantes fiquem expostas e possam causar ferimentos[cite: 20, 21].
           </p>
         </div>
       </div>
@@ -375,10 +361,10 @@
   </div>
 
   <div style="background-color: #000; padding: 40px 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-top: 60px;">
-    <p style="color: #fff; font-size: clamp(16px, 2vw, 20px); margin: 0; font-family: 'Roboto', sans-serif;">
+    <p style="color: #fff; font-size: 20px; margin: 0; font-family: 'Roboto', sans-serif;">
       Para Dúvidas ou Sugestões:
     </p>
-    <p style="color: #fff; font-size: clamp(20px, 3vw, 24px); margin: 5px 0 0; font-family: 'Roboto', sans-serif; font-weight: normal;">
+    <p style="color: #fff; font-size: 24px; margin: 5px 0 0; font-family: 'Roboto', sans-serif; font-weight: normal;">
       (67) 3524-8350
     </p>
   </div>
