@@ -13,12 +13,40 @@
   <title>Evite acidentes e proteja o coletor de lixo</title>
 
   <style>
+
+      .texto-principal {
+    font-size: clamp(16px, 2.4vw, 24px);
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
       color: #000;
       margin: 0;
       padding: 0;
     }
+        .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+      display: inline-block;
+      margin: 6px 10px;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
 
     .btn-custom {
       background-color: #52CF58;
@@ -246,11 +274,11 @@
   <nav class="navbar navbar-dark" style="background-color: #000;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="reciclagem.svg" alt="Logo" width="50">
+        <img src="3_passos/reciclagem.svg" alt="Logo" width="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleMenu"
         aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="menu.svg" alt="Menu" width="40">
+        <img src="3_passos/menu.svg" alt="Menu" width="40">
       </button>
 
       <div class="collapse navbar-collapse" id="navbarToggleMenu">
@@ -265,7 +293,7 @@
   </nav>
 
   <div class="hero">
-    <img src="splixo.png" alt="Imagem Principal">
+    <img src="3_passos/splixo.png" alt="Imagem Principal">
     <div class="hero-text">
       <h1>O PERIGO ESCONDIDO NO LIXO</h1>
       <a href="#conteudo" class="btn-custom">veja agora</a>
@@ -274,7 +302,8 @@
 
   <div id="conteudo" class="container mt-5">
 
-    <p style="font-size: 24px">Objetos cortantes ou pontiagudos, quando descartados de forma incorreta,
+    <p class="texto-principal">
+      Objetos cortantes ou pontiagudos, quando descartados de forma incorreta,
       transformam sacos de lixo em verdadeiras armadilhas. Vidro quebrado, latas abertas,
       agulhas e espetinhos de churrasco são os maiores causadores de acidentes graves entre
       os coletores que trabalham diariamente para manter nossa cidade limpa. Um simples descuido
@@ -288,7 +317,7 @@
 
       <div class="armadilhas">
         <div class="armadilha">
-          <img src="vidro-quebrado.png" alt="Ícone de vidro quebrado">
+          <img src="3_passos/vidro-quebrado.png" alt="Ícone de vidro quebrado">
           <p>
             Pedaços de vidro quebrado, mesmo os pequenos, transformam os sacos de lixo em armadilhas.
             Eles podem rasgar as embalagens e luvas de proteção, causando cortes profundos e acidentes
@@ -297,7 +326,7 @@
         </div>
 
         <div class="armadilha">
-          <img src="seringa.png" alt="Ícone de seringa">
+          <img src="3_passos/seringa.png" alt="Ícone de seringa">
           <p>
             Agulhas, espetos e outros objetos pontiagudos, quando descartados incorretamente, são os
             maiores causadores de acidentes entre os coletores. Um simples descuido no descarte pode
@@ -317,7 +346,7 @@
     <div class="cards-wrap">
 
       <div class="card-passos">
-        <img src="garrafa-de-vidro.png" alt="Ícone vidro">
+        <img src="3_passos/garrafa-de-vidro.png" alt="Ícone vidro">
         <div class="card-content">
           <h3>EMBALE VIDROS E LOUÇAS</h3>
           <p>
@@ -327,7 +356,7 @@
       </div>
 
       <div class="card-passos">
-        <img src="agulha-de-seringa.png" alt="Ícone seringa">
+        <img src="3_passos/agulha-de-seringa.png" alt="Ícone seringa">
         <div class="card-content">
           <h3>USE GARRAFAS PET PARA PONTIAGUDOS</h3>
           <p>
@@ -337,7 +366,7 @@
       </div>
 
       <div class="card-passos">
-        <img src="saco-de-lixo.png" alt="Ícone saco de lixo">
+        <img src="3_passos/saco-de-lixo.png" alt="Ícone saco de lixo">
         <div class="card-content">
           <h3>IDENTIFIQUE O RISCO</h3>
           <p>
@@ -347,7 +376,7 @@
       </div>
 
       <div class="card-passos">
-        <img src="sardinhas-enlatadas.png" alt="Ícone lata">
+        <img src="3_passos/sardinhas-enlatadas.png" alt="Ícone lata">
         <div class="card-content">
           <h3>CUIDADO COM AS LATAS</h3>
           <p>
